@@ -147,12 +147,30 @@ footer {
 	background-color: rgb(105,165,197);
 	position: fixed;
   	bottom: 0;
-  	width: 100%;
+    width: 100%;
+    height: 70px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+#github, #linkedin {
+    width: 30px;
+    height: auto;
+}
+
+#github img, #linkedin img {
+    width: 100%;
 }
 
 #back-to-top {
 	width: 20px;
-	height: auto;
+    height: auto;
+    margin-left: 50px;
 }
 
 #back-to-top img {
