@@ -129,7 +129,12 @@ nav ul li a:hover {
 }
 
 .about-img img {
-	width: 100%;
+    width: 100%;
+    box-shadow: 5px 5px 20px rgb(50, 50, 50);
+}
+
+.about-text {
+    padding-top: 20px;
 }
 
 /* ---------- Footer ---------- */
