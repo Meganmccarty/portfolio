@@ -1,3 +1,5 @@
+/* ---------- Header and Navigation ---------- */
+
 header {
     padding: 20px;
     background-color: rgb(105,165,197);
@@ -24,6 +26,8 @@ nav ul li a:hover {
     color: purple;
 }
 
+/* ---------- Section Headers ---------- */
+
 .section-header {
     display: flex;
     flex-direction: row;
@@ -34,30 +38,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.about {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-    text-align: center;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.about-img {
-	width: 250px;
-}
-
-.about-img img {
-	width: 100%;
-}
-
-.about-text {
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-}
+/* ---------- Projects section ---------- */
 
 #project-carousel {
     margin-left: auto;
@@ -65,12 +46,7 @@ nav ul li a:hover {
     margin-top: 20px;
     width: 50%;
 }
-/*
-.carousel-caption, .carousel-indicators {
-    background: rgb(255, 255, 255, 0.9);
-    color: black;
-}
-*/
+
 .projects {
     display: flex;
     flex-direction: row;
@@ -98,6 +74,8 @@ nav ul li a:hover {
     width: 100%;
     box-shadow: 5px 5px 20px rgb(50, 50, 50);
 }
+
+/* ---------- Skills Section ---------- */
 
 .skills {
 	display: flex;
@@ -133,9 +111,28 @@ nav ul li a:hover {
     padding: 10px;
 }
 
+/* ---------- About Section ---------- */
+
 .about {
-	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
 }
+
+.about-img {
+	width: 250px;
+}
+
+.about-img img {
+	width: 100%;
+}
+
+/* ---------- Footer ---------- */
 
 footer {
     display: flex;
@@ -159,6 +156,8 @@ footer {
 	border-radius: 30px;
 	padding: 3px;
 }
+
+/* ---------- Media Queries ---------- */
 
 @media all and (max-width: 775px) {
     header {
