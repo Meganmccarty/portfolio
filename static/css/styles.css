@@ -1,3 +1,9 @@
+/* ---------- Basic CSS Stuff ---------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* ---------- Header and Navigation ---------- */
 
 header {
