@@ -4,32 +4,52 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: rgb(240, 237, 230);
+}
+
 /* ---------- Header and Navigation ---------- */
 
 header {
-    padding: 20px;
-    background-color: rgb(105,165,197);
-}
-
-nav {
-    font-weight: bold;
+    padding: 10px;
+    /*background-color: rgb(105,165,197);*/
+    background-color: rgb(53, 83, 138);
+    color: white;
 }
 
 nav ul li {
     display: inline;
     list-style: none;
-    padding-left: 1px;
-    padding-right: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 nav ul li a {
     font-size: 20px;
-    color: black;
+    color: white;
 }
 
 nav ul li a:hover {
     text-decoration: none;
-    color: purple;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(86, 161, 29);
+}
+
+#blockcard {
+    background-color: rgb(219, 203, 189);
+    padding: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#blockcard img {
+    width: 20%;
+    border-radius: 200px;
+    box-shadow: 5px 5px 20px rgb(50, 50, 50);
+    margin-bottom: 10px;
 }
 
 /* ---------- Section Headers ---------- */
@@ -38,27 +58,21 @@ nav ul li a:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(199, 218, 228);
+    /*background-color: rgb(199, 218, 228);*/
+    background-color: rgb(165, 185, 208);
     padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 /* ---------- Projects section ---------- */
-
-#project-carousel {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    width: 50%;
-}
 
 .projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: space-evenly;
-    margin-top: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
 .project-item {
@@ -66,19 +80,46 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    width: 325px;
+    margin: 20px;
+    width: 400px;
 }
 
 .project-title {
     padding: 10px;
+    background-color: rgb(54, 56, 56);
+    color: white;
+    width: 100%;
+    text-align: center;
 }
+
+.project-title a {
+    color: white;
+}
+
 .project-desc {
     padding-top: 20px;
+    font-size: 18px;
 }
 
 .project-item img {
     width: 100%;
     box-shadow: 5px 5px 20px rgb(50, 50, 50);
+}
+
+.styled-button {
+    background-color: rgb(126, 201, 69);
+    font-size: 20px;
+    border: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.styled-button:hover {
+    background-color: rgb(86, 161, 29);
+    color: white;
+    box-shadow: -2px -2px 20px rgb(57, 132, 0) inset, 2px 2px 20px rgb(57, 132, 0) inset;
 }
 
 /* ---------- Skills Section ---------- */
@@ -117,6 +158,10 @@ nav ul li a:hover {
     padding: 10px;
 }
 
+.skill-item img {
+    width: 100%;
+}
+
 /* ---------- About Section ---------- */
 
 .about {
@@ -128,15 +173,8 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
-}
-
-.about-img {
-	width: 250px;
-}
-
-.about-img img {
-    width: 100%;
-    box-shadow: 5px 5px 20px rgb(50, 50, 50);
+    font-size: 22px;
+    padding: 30px;
 }
 
 .about-text {
@@ -150,11 +188,13 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-	background-color: rgb(105,165,197);
+    /*background-color: rgb(105,165,197);*/
+    background-color: rgb(53, 83, 138);
+    color: white;
 	position: fixed;
   	bottom: 0;
     width: 100%;
-    height: 70px;
+    min-height: 70px;
 }
 
 .icons {
@@ -165,7 +205,7 @@ footer {
 }
 
 #github, #linkedin {
-    width: 30px;
+    width: 40px;
     height: auto;
 }
 
@@ -174,14 +214,14 @@ footer {
 }
 
 #back-to-top {
-	width: 20px;
+	width: 30px;
     height: auto;
     margin-left: 50px;
 }
 
 #back-to-top img {
 	width: 100%;
-	border: 1px solid black;
+	border: 2px solid white;
 	border-radius: 30px;
 	padding: 3px;
 }
@@ -193,5 +233,9 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #blockcard img {
+        width: 35%;
     }
 }
