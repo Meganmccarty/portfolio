@@ -186,15 +186,21 @@ nav ul li a:hover {
 footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     /*background-color: rgb(105,165,197);*/
     background-color: rgb(53, 83, 138);
     color: white;
 	position: fixed;
   	bottom: 0;
     width: 100%;
-    min-height: 70px;
+    height: 50px;
+}
+
+footer p {
+    padding-top: 10px;
 }
 
 .icons {
@@ -237,5 +243,15 @@ footer {
 
     #blockcard img {
         width: 35%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    footer {
+        height: 70px;
+    }
+
+    footer p {
+        padding-top: 10px;
     }
 }
